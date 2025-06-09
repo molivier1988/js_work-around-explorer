@@ -5,7 +5,10 @@ import salaryData from "./salaryData.js";
 // Replace the empty array with the appropriate imported function/value
 const getAverageSalaryByRole = (role) => {
   const roleData = getDataByRole(role);
+  console.log(typeof roleData);
+  console.log(roleData);
   const salariesOfRole = roleData.map((obj) => obj.salary);
+  console.log(salariesOfRole);
   return calculateAverage(salariesOfRole);
 };
 
