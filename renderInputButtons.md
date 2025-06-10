@@ -2,7 +2,7 @@
 
 ## Purpose
 
-I struggled to understand how the **select a role** and **select a company** sections were created on the fly using JS. So I walked through the code and this is in my own words how this function works.
+I struggled to understand how the **select a role** and **select a company** sections were created on the fly using JS. So in my own words this is how it works:
 
 ### renderInputButtons()
 
