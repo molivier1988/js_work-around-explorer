@@ -33,7 +33,7 @@ The function is passed 2 arguments
    container.SetAttribute("id", `${groupName}Inputs)
 ```
 
-    => Create a new HTML element <section> and set an ID attribute of either **roleInputs** | **companyInputs**
+    1. Create a new HTML element <section> and set an ID attribute of either **roleInputs** | **companyInputs**
 
 #### Step 3 Add H3 Headers
 
@@ -43,11 +43,11 @@ header.innerText = `Select a ${groupName}`;
 container.appendChild(header);
 ```
 
-    Create a `<h3>` element
+    1. Create a `<h3>` element
 
-    set it's text to either **role** | **company**
+    2. Set it's text to either **role** | **company**
 
-    append new element to its container <section>
+    3. Append new element to its container <section>
 
 #### Step 4 Create divs
 
@@ -59,9 +59,9 @@ labels.forEach((label) => {
 
 For each label in the array labels
 
-    => Create a new <div></div>
+    1. Create a new <div></div>
 
-    => Set the ***class** attribute to "option"
+    2. Set the ***class** attribute to "option"
 
 #### step 5 Create radio buttons
 
@@ -75,15 +75,15 @@ divElement.appendChild(inputElement);
 
 For each **label** in the arrays **role** | **company**
 
-    => Create an <input> element
+    1. Create an <input> element
 
-    => Set its type to "radio"
+    2. Set its type to "radio"
 
-    => Set its name attribute to either "role" | "company"
+    3. Set its name attribute to either "role" | "company"
 
-    => Set its value attribute to the current label (this will be either a role e.g. 'CTO' | company 'Big Data Inc.)
+    4. Set its value attribute to the current label (this will be either a role e.g. 'CTO' | company 'Big Data Inc.)
 
-    => Append new inputElement to its parent <div>
+    5. Append new inputElement to its parent <div>
 
 #### Step 5 Create a label for the radio inputs
 
@@ -96,9 +96,9 @@ divElement.appendChild(labelElement);
 
 For each radio input
 
-    => Set "for" attribute to current label
-    => Set label text to current label
-    => append <label> element as child to <div>
+    1. Set "for" attribute to current label
+    2. Set label text to current label
+    3. append <label> element as child to <div>
 
 #### Step 6 Add event listener
 
@@ -106,7 +106,7 @@ For each radio input
 
 Add an event listener to each radio button
 
-    => Call updateResults() function on "click"
+    1. Call updateResults() function on "click"
 
 ### Step 7 Add new sections to the HTML page
 
@@ -114,4 +114,4 @@ Add an event listener to each radio button
 
 Use `querySelector` to find the `<main>` element
 
-    => Append <container> to <main>. This effectively adds the 2 new sections created by the above code.
+    1. Append <container> to <main>. This effectively adds the 2 new sections created by the above code.
