@@ -14,7 +14,7 @@ The 2nd is a string which will be used later to add text to the rendered page pl
 
 ### Create new sections
 
-The core of the function creates 2 sections within the HTML page for **role** an **company**.
+The core of the function creates 2 sections within the HTML page for **role** and **company**.
 
 #### Step 1 Call renderInputButtons()
 
