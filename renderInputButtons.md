@@ -6,11 +6,11 @@ I struggled to understand how the **select a role** and **select a company** sec
 
 ### renderInputButtons()
 
-`renderInputButtons(companies, "company")` takes 2 arguments.
+`renderInputButtons(companies, "company")`
 
-The 1st **companies** | **roles** is a variable **_[main.js line 12 & 13]_** which stores the results from the `getCompanies()` & `getRoles()` functions found in **_salaryData.js_** this returns an array of strings ['Big Data Inc.', 'Medium Data Inc.', 'Small Data Inc.'] and ['CTO', 'Technical Lead', 'Software Engineer II', 'Software Engineer I']
+ARG_1 **companies** | **roles** stores the results from the `getCompanies()` & `getRoles()` functions found in **_salaryData.js_** returning an array of strings ['Big Data Inc.', 'Medium Data Inc.', 'Small Data Inc.'] and ['CTO', 'Technical Lead', 'Software Engineer II', 'Software Engineer I']
 
-The 2nd is a string which will be used later to add text to the rendered page plus **names** and **labels** for the input buttons.
+ARG_2 is a string which will be used later to add text to the rendered page plus **names** and **labels** for the input buttons.
 
 ### Create new sections
 
@@ -24,7 +24,7 @@ The function is passed 2 arguments
 
 **labels** An array containing the role and company name data
 
-**groupName** Either "company" | "role"
+**groupName** Stores a string either "company" | "role"
 
 #### Step 2 Dynamically create sections
 
@@ -43,11 +43,11 @@ header.innerText = `Select a ${groupName}`;
 container.appendChild(header);
 ```
 
-    => Create a `<h3>` element
+    Create a `<h3>` element
 
-    => set it's text to either **role** | **company**
+    set it's text to either **role** | **company**
 
-    => append new element to its container <section>
+    append new element to its container <section>
 
 #### Step 4 Create divs
 
